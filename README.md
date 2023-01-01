@@ -1,4 +1,4 @@
-# DerivativeCalculator
+# Derivative Antiderivative Calculator
 
 This is a derivative and antiderivative calculator that I made for integral computation convenience and is helpful for situations where you need to go back and forth between the derivative and antiderivative. 
 
