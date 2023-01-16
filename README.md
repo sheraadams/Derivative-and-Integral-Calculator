@@ -1,6 +1,6 @@
 # Documentation
 
-This is a derivative and integral calculator that is helpful with mathematical modeling and engineering functions to fit a curve. 
+Derivative and integral calculator that is helpful with mathematical modeling and engineering functions to fit a curve. 
 
 <p align="center">
   <img width="" height="" src="https://user-images.githubusercontent.com/110789514/209882765-45d00115-4e14-483c-8154-334446804d93.png">
