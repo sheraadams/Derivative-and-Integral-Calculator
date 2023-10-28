@@ -21,11 +21,6 @@ pip install tkinter future pillow
 
 ```
 
-## License
-
-All code in this repository is licensed under a [APACHE LICENSE, VERSION 2.0](LICENSE-CODE).
-
-
 <div style="text-align: center;">
   <p><strong>Proudly crafted with ❤️ by <a href="https://github.com/sheraadams" target="_blank">Shera Adams</a>.</strong></p>
 </div>
