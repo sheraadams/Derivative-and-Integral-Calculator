@@ -28,7 +28,6 @@ def calculus():
             if q == "yes":
                 print(x, "/", n + 1, "=", x / (n + 1), "\n")
 
-
 # GUI window defined
 #colors
 back = "#022126"
@@ -36,10 +35,8 @@ box= "#0C2D48"
 neon= "#65FC6A"
 purple= "#278ED5"
 
-
 window = Tk(className= "Derivative and Antiderivative Calculator")
 window.configure(bg= back, padx=30, pady=30)
-
 
 def calc():
     try:
@@ -79,8 +76,6 @@ def calc():
         t5.insert(END, "")
         t6.delete("1.0", END)
         t6.insert(END, "")
-
-
 
 # Derivative Calculator and Labels
 l1= Label(window, bg= back,  fg=purple, text='Derivative Calculator',font='Helvetica 11 bold')
