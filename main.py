@@ -42,28 +42,44 @@ window.configure(bg= back, padx=30, pady=30)
 
 
 def calc():
-    # Derivative calculation
-    coefficient = float(c1_value.get()) * float(p1_value.get())
-    x = 'x'
-    power = float(p1_value.get()) - 1
+    try:
+        # Derivative calculation
+        coefficient = float(c1_value.get()) * float(p1_value.get())
+        x = 'x'
+        power = float(p1_value.get()) - 1
 
-    # Antiderivative calculation
-    power2 = float(p2_value.get()) + 1
-    coefficient2 = float(c2_value.get()) / power2
+        # Antiderivative calculation
+        power2 = float(p2_value.get()) + 1
+        coefficient2 = float(c2_value.get()) / power2
 
-    # display calculated values to ui
-    t1.delete("1.0", END)
-    t1.insert(END, coefficient)
-    t2.delete("1.0", END)
-    t2.insert(END, x)
-    t3.delete("1.0", END)
-    t3.insert(END, power)
-    t4.delete("1.0", END)
-    t4.insert(END, coefficient2)
-    t5.delete("1.0", END)
-    t5.insert(END, x)
-    t6.delete("1.0", END)
-    t6.insert(END, power2)
+        # display calculated values to UI
+        t1.delete("1.0", END)
+        t1.insert(END, coefficient)
+        t2.delete("1.0", END)
+        t2.insert(END, x)
+        t3.delete("1.0", END)
+        t3.insert(END, power)
+        t4.delete("1.0", END)
+        t4.insert(END, coefficient2)
+        t5.delete("1.0", END)
+        t5.insert(END, x)
+        t6.delete("1.0", END)
+        t6.insert(END, power2)
+    except ValueError:
+        # Handle invalid input values (non-float)
+        t1.delete("1.0", END)
+        t1.insert(END, "Invalid Input")
+        t2.delete("1.0", END)
+        t2.insert(END, "")
+        t3.delete("1.0", END)
+        t3.insert(END, "")
+        t4.delete("1.0", END)
+        t4.insert(END, "Invalid Input")
+        t5.delete("1.0", END)
+        t5.insert(END, "")
+        t6.delete("1.0", END)
+        t6.insert(END, "")
+
 
 
 # Derivative Calculator and Labels
