@@ -1,8 +1,5 @@
 # Derivative and Integral Calculator
 
-[![GitHub](https://img.shields.io/github/license/sheraadams/Derivative-and-Integral-Calculator)](https://github.com/sheraadams/cs340/blob/master/LICENSE)
-[![Python Version](https://img.shields.io/pypi/pyversions/dash.svg?color=dark-green)](https://www.python.org)
-
 ## About the Project
 
 This is a derivative and integral calculator for mathematical modeling and engineering functions to fit a curve. The application was programmed in Python using tkinter, future, and pillow libraries for gui. 
