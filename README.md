@@ -5,8 +5,12 @@
 This is a derivative and integral calculator for mathematical modeling and engineering functions to fit a curve. The application was programmed in Python using Tkinter, Future, and Pillow libraries for GUI. Check out this program's [Java Android app version here](https://github.com/sheraadams/Calculus-Helper-Android-App).
 
 <p align="center">
-  <img width="" height="" src="https://user-images.githubusercontent.com/110789514/209882765-45d00115-4e14-483c-8154-334446804d93.png">
+  <img width="" height="" src="https://github.com/sheraadams/Derivative-and-Integral-Calculator/assets/110789514/2d71314f-324a-4d72-93ff-fc075f675f58">
 </p>
+
+## UX Research Data
+
+To make this app more accessible to those with moderate to significant visual impairments, I conducted some preliminary research to determine what colors and fonts were most accessible to all audiences. You can find [the UI/UX research here](https://github.com/sheraadams/UI-UX). 
 
 ## Instructions
 
