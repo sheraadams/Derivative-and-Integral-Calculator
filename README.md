@@ -12,6 +12,10 @@ This is a derivative and integral calculator for mathematical modeling and engin
 
 To make this app more accessible to those with moderate to significant visual impairments, I conducted some preliminary research to determine what colors and fonts were most accessible to all audiences. You can find [the UI/UX research here](https://github.com/sheraadams/UI-UX). 
 
+## The Android Mobile App
+
+The mobile app features derivative and integral calculation, side-by-side and singular graphing. You can find [the mobile app here](https://github.com/sheraadams/Calculus-Helper-Android-App).
+
 ## Instructions
 
 To use the application, first use the terminal to install the dependencies with the following command:
