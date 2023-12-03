@@ -1,12 +1,18 @@
 # Derivative and Integral Calculator
+[![GitHub](https://img.shields.io/github/license/sheraadams/Derivative-and-Integral-Calculator)](https://img.shields.io/github/license/sheraadams/Simple-RSA-Mesage-Encryption)
+[![Python Version](https://img.shields.io/pypi/pyversions/dash.svg?color=dark-green)](https://www.python.org)
 
 ## About the Project
+This is a derivative and integral calculator for mathematical modeling and engineering functions to fit a curve. The application was programmed in Python using Tkinter, Future, and Pillow libraries for GUI. 
 
-This is a derivative and integral calculator for mathematical modeling and engineering functions to fit a curve. The application was programmed in Python using Tkinter, Future, and Pillow libraries for GUI. Check out this program's [Java Android app version here](https://github.com/sheraadams/Calculus-Helper-Android-App).
+Check out this program's [Java Android app version here](https://github.com/sheraadams/Calculus-Helper-Android-App).
+
+And check out the [UX Research here](https://github.com/sheraadams/UI-UX).
 
 <p align="center">
-  <img width="" height="" src="https://github.com/sheraadams/Derivative-and-Integral-Calculator/assets/110789514/2d71314f-324a-4d72-93ff-fc075f675f58">
+  <img width="80%" height="80%" src="https://github.com/sheraadams/Derivative-and-Integral-Calculator/assets/110789514/e0adfb41-213a-4208-824c-d6fe9f3bdcc9">
 </p>
+
 
 ## UX Research Data
 
@@ -22,7 +28,9 @@ To use the application, first use the terminal to install the dependencies with 
 
 Bash:
 ```bash
-pip install tkinter future pillow
+pip install tkinter
+pip install future
+pip install pillow
 ```
 
 <div style="text-align: center;">
