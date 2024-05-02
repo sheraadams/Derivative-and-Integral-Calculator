@@ -30,108 +30,93 @@ def calculus():
 
 # GUI window defined
 #colors
-back = "#022126"
-box= "#0C2D48"
-neon= "#65FC6A"
-purple= "#278ED5"
+bg_color = "#1c1b1f"   # dark slate
+text_color = "#000000"   # black or  "#6200EE"   purple
+box_color = "#03DAC5"   # teal
+purple = "#BB86FC"  # lavender
+button_color = "#BB86FC"
 
 window = Tk(className= "Derivative and Antiderivative Calculator")
-window.configure(bg= back, padx=30, pady=30)
+window.configure(bg= bg_color, padx=180, pady=60)
+window.geometry("880x508")
 
 def calc():
-    try:
-        # Derivative calculation
-        coefficient = float(c1_value.get()) * float(p1_value.get())
-        x = 'x'
-        power = float(p1_value.get()) - 1
+    # Derivative calculation
+    coefficient = float(c1_value.get()) * float(p1_value.get())
+    x = 'x'
+    power = float(p1_value.get()) - 1
 
-        # Antiderivative calculation
-        power2 = float(p2_value.get()) + 1
-        coefficient2 = float(c2_value.get()) / power2
+    # Antiderivative calculation
+    power2 = float(p2_value.get()) + 1
+    coefficient2 = float(c2_value.get()) / power2
 
-        # display calculated values to UI
-        t1.delete("1.0", END)
-        t1.insert(END, coefficient)
-        t2.delete("1.0", END)
-        t2.insert(END, x)
-        t3.delete("1.0", END)
-        t3.insert(END, power)
-        t4.delete("1.0", END)
-        t4.insert(END, coefficient2)
-        t5.delete("1.0", END)
-        t5.insert(END, x)
-        t6.delete("1.0", END)
-        t6.insert(END, power2)
-    except ValueError:
-        # Handle invalid input values (non-float)
-        t1.delete("1.0", END)
-        t1.insert(END, "Invalid Input")
-        t2.delete("1.0", END)
-        t2.insert(END, "")
-        t3.delete("1.0", END)
-        t3.insert(END, "")
-        t4.delete("1.0", END)
-        t4.insert(END, "Invalid Input")
-        t5.delete("1.0", END)
-        t5.insert(END, "")
-        t6.delete("1.0", END)
-        t6.insert(END, "")
+    # display calculated values to ui
+    t1.delete("1.0", END)
+    t1.insert(END, coefficient)
+    t2.delete("1.0", END)
+    t2.insert(END, x)
+    t3.delete("1.0", END)
+    t3.insert(END, power)
+    t4.delete("1.0", END)
+    t4.insert(END, coefficient2)
+    t5.delete("1.0", END)
+    t5.insert(END, x)
+    t6.delete("1.0", END)
+    t6.insert(END, power2)
 
 # Derivative Calculator and Labels
-l1= Label(window, bg= back,  fg=purple, text='Derivative Calculator',font='Helvetica 11 bold')
-l2= Label(window, bg= back,  fg=neon, text='Coefficient of X')
-l3= Label(window, bg= back,  fg=neon,text='Power')
-l4 = Label(window, bg= back,  fg=neon, text="Enter coefficient of x, power:",font='Helvetica 9 bold')
+l1= Label(window, bg= bg_color,  fg=purple, text='Derivative Calculator',font='Helvetica 11 bold')
+l2= Label(window, bg= bg_color,  fg=box_color, text='Coefficient of X')
+l3= Label(window, bg= bg_color,  fg=box_color,text='Power')
+l4 = Label(window, bg= bg_color,  fg=box_color, text="Enter coefficient of x, power:",font='Helvetica 9 bold')
 
 # Derivative Calculator Entry
 c1_value = StringVar(window, value='0')
-c1 = Entry(window, bg= neon, fg= box, textvariable=c1_value)
+c1 = Entry(window, bg= box_color, fg= text_color, textvariable=c1_value)
 p1_value = StringVar(window, value='0')
-p1 = Entry(window, bg= neon,  fg=box, textvariable=p1_value)
+p1 = Entry(window, bg= box_color,  fg=text_color, textvariable=p1_value)
 
 # Label Coefficient, x, power
-r1 = Label(window, bg= back,  fg=neon, text='Coefficient')
-r2 = Label(window, bg= back,  fg=neon, text='x^')
-r3 = Label(window, bg= back,  fg=neon, text='Power')
+r1 = Label(window, bg= bg_color,  fg=box_color, text='Coefficient')
+r2 = Label(window, bg= bg_color,  fg=box_color, text='x^')
+r3 = Label(window, bg= bg_color,  fg=box_color, text='Power')
 
 # Widget to display Calculated derivative values
-t1 = Text(window, bg= neon,  fg=box, height=1, width=20)
-t2 = Text(window, bg= neon,  fg=box, height=1, width=20)
-t3 = Text(window, bg= neon,  fg=box, height=1, width=20)
+t1 = Text(window, bg= box_color,  fg=text_color, height=1, width=20)
+t2 = Text(window, bg= box_color,  fg=text_color, height=1, width=20)
+t3 = Text(window, bg= box_color,  fg=text_color, height=1, width=20)
 
 # Space between Calcs
-s0 = Label(window, bg= back,  fg=neon, text='')
-s1 = Label(window, bg= back,  fg=neon, text='')
-s2 = Label(window, bg= back,  fg=neon, text='')
-s3 = Label(window, bg= back,  fg=neon, text='')
+s0 = Label(window, bg= bg_color,  fg=box_color, text='')
+s1 = Label(window, bg= bg_color,  fg=box_color, text='')
+s2 = Label(window, bg= bg_color,  fg=box_color, text='')
+s3 = Label(window, bg= bg_color,  fg=box_color, text='')
 
 # Antiderivative Calculator and labels
-l5= Label(window, bg= back,  fg=purple, text='Antiderivative Calculator',font='Helvetica 11 bold')
-l6= Label(window, bg= back,  fg=neon, text='Coefficient of X')
-l7= Label(window, bg= back,  fg=neon, text='Power')
-l8 = Label(window, bg= back,  fg=neon, text="Enter coefficient of x, power:",font='Helvetica 9 bold')
+l5= Label(window, bg= bg_color,  fg=purple, text='Antiderivative Calculator',font='Helvetica 11 bold')
+l6= Label(window, bg= bg_color,  fg=box_color, text='Coefficient of X')
+l7= Label(window, bg= bg_color,  fg=box_color, text='Power')
+l8 = Label(window, bg= bg_color,  fg=box_color, text="Enter coefficient of x, power:",font='Helvetica 9 bold')
 
 # Antidervative Calc Entry
 c2_value = StringVar(window, value='0')
-c2 = Entry(window, bg= neon,  fg=box, textvariable=c2_value)
+c2 = Entry(window, bg= box_color,  fg=text_color, textvariable=c2_value)
 p2_value = StringVar(window, value='0')
-p2 = Entry(window, bg= neon,  fg=box, textvariable=p2_value)
+p2 = Entry(window, bg= box_color,  fg=text_color, textvariable=p2_value)
 
 # Label Coefficient, x, power
-r4 = Label(window,bg= back,  fg=neon, text='Coefficient')
-r5 = Label(window,bg= back,  fg=neon, text='x^')
-r6 = Label(window, bg= back,  fg=neon, text='Power')
+r4 = Label(window,bg= bg_color,  fg=box_color, text='Coefficient')
+r5 = Label(window,bg= bg_color,  fg=box_color, text='x^')
+r6 = Label(window, bg= bg_color,  fg=box_color, text='Power')
 
 # Widget to display Calculated antiderivative values
-t4 = Text(window, bg= neon,  fg=back, height=1, width=20)
-t5 = Text(window, bg= neon,  fg=back, height=1, width=20)
-t6 = Text(window, bg= neon,  fg=back, height=1, width=20)
+t4 = Text(window, bg= box_color,  fg=bg_color, height=1, width=20)
+t5 = Text(window, bg= box_color,  fg=bg_color, height=1, width=20)
+t6 = Text(window, bg= box_color,  fg=bg_color, height=1, width=20)
 
 # Button Widgets Calculate
-b1 = Button(window,bg= neon,  fg=back, text="Calculate", command=calc)
-b2 = Button(window, bg= neon,  fg=back, text="Calculate", command=calc)
-# TODO: Create launch new window
-b3 = Button(window, bg= neon,  fg=back, text="Launch")
+b1 = Button(window,bg= button_color,  fg=bg_color, text="Calculate", command=calc)
+b2 = Button(window, bg= button_color,  fg=bg_color, text="Calculate", command=calc)
 
 # Grid
 # Row 0: Label Derivative
@@ -187,13 +172,11 @@ t6.grid(row=12, column=2)
 # Add Spacing
 s2.grid(row=13, column=1)
 
-# Calculate Antierivative button
+# Calculate Antiderivative button
 b2.grid(row=14, column=1)
 # Add Spacing
 s3.grid(row=15, column=1)
 
-# Launch Button
-b3.grid(row=16, column=1)
-
 # Start the GUI
 window.mainloop()
+

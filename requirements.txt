@@ -1,0 +1,6 @@
+random
+math
+tkinter
+PIL
+time
+numpy
